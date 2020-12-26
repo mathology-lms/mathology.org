@@ -17,6 +17,7 @@ body {
     margin-top: 12vh;
     text-align: center;
     #text {
+        z-index: 1;
         position: relative;
         width: 35%;
         left: 32.5%;
@@ -55,5 +56,33 @@ body {
         button {
             font-size: calc(1.4vh + 1.4vw);
         }
+    }
+}
+
+footer {
+    position: absolute;
+    width: 100%;
+    bottom: -5%;
+    svg {
+        z-index: -1;
+    }
+}
+
+#bottomHelp {
+    position: absolute;
+    bottom: -2%;
+    background: #44a164;
+    width: 100%;
+    height: 28%;
+    display: none;
+    z-index: -1;
+}
+
+@media only screen and (max-width: 1000px) {
+    footer {
+        bottom: 20%;
+    }
+    #bottomHelp {
+        display: block;
     }
 }
